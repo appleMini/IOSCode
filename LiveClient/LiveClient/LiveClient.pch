@@ -1,0 +1,26 @@
+//
+//  LiveClient.pch
+//  LiveClient
+//
+//  Created by 小布丁 on 2017/2/18.
+//  Copyright © 2017年 小布丁. All rights reserved.
+//
+
+#ifndef LiveClient_pch
+#define LiveClient_pch
+
+#ifdef __OBJC__
+#import <Availability.h>
+#import "MBProgressHUD+Add.h"
+#import "Masonry.h"
+
+#import "MJExtension.h"
+#import "common.h"
+#import "UIViewController+LoadingView.h"
+
+#define IOS_VERSION  ([[[UIDevice currentDevice] systemVersion] floatValue])
+#define IOS9_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue]) >= 9.0
+
+#endif
+
+#endif /* LiveClient_pch */
